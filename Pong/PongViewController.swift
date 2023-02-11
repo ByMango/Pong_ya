@@ -106,7 +106,7 @@ class PongViewController: UIViewController {
     }
     
     // Обновляет счет противника
-    
+    //rjv
 
     // MARK: - Instance Methods
 
