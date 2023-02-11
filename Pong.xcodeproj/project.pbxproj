@@ -25,6 +25,7 @@
 		2DD88B7F28344DD500887904 /* PongViewController+BallHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD88B7E28344DD500887904 /* PongViewController+BallHit.swift */; };
 		2DD88B8128344E2400887904 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD88B8028344E2400887904 /* Sound.swift */; };
 		2DD88B8328345D1000887904 /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2DD88B8228345D1000887904 /* background.wav */; };
+		F3CAF5AD2998337F001BF443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAF5AC2998337F001BF443 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		2DD88B7E28344DD500887904 /* PongViewController+BallHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PongViewController+BallHit.swift"; sourceTree = "<group>"; };
 		2DD88B8028344E2400887904 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		2DD88B8228345D1000887904 /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		F3CAF5AC2998337F001BF443 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../Documents/xCode/Pong_ya/AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2D9E77952767D1C7008457CD /* AppDelegate.swift */,
+				F3CAF5AC2998337F001BF443 /* AppDelegate.swift */,
 				2D9E77972767D1C7008457CD /* SceneDelegate.swift */,
 				2D9E77992767D1C7008457CD /* PongViewController.swift */,
 				2DD88B772834465A00887904 /* PongViewControllerExtensions */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CAF5AD2998337F001BF443 /* AppDelegate.swift in Sources */,
 				2D9E779A2767D1C7008457CD /* PongViewController.swift in Sources */,
 				2DD88B8128344E2400887904 /* Sound.swift in Sources */,
 				2D30F1852833E074006F493F /* PongViewController+UIKitDynamics.swift in Sources */,
@@ -369,7 +373,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PL6N9LRHKL;
+				DEVELOPMENT_TEAM = B4V9BFNUHQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -384,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex-praktikum.pong";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mogolovan.practicum-pong-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -399,7 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PL6N9LRHKL;
+				DEVELOPMENT_TEAM = B4V9BFNUHQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -414,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex-praktikum.pong";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mogolovan.practicum-pong-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

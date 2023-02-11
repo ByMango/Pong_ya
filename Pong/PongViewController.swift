@@ -38,6 +38,9 @@ class PongViewController: UIViewController {
 
     /// Это переменная отображения лэйбла со счетом игрока
     @IBOutlet var userScoreLabel: UILabel!
+    
+    /// Это переменная отображения лэйбла со счетом соперника
+    @IBOutlet var enemyScoreLabel: UILabel!
 
     // MARK: - Instance Properties
 
@@ -101,12 +104,16 @@ class PongViewController: UIViewController {
             updateUserScoreLabel()
         }
     }
+    
+    // Обновляет счет противника
+    
 
     // MARK: - Instance Methods
 
     /// Эта функция запускается 1 раз когда представление экрана загрузилось
     /// и вот-вот покажется в окне отображения
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         /*
@@ -124,7 +131,9 @@ class PongViewController: UIViewController {
         Удали два слэша в начале 127-ой строки и запусти проект, чтобы игра заработала!
         */
 
-        //configurePongGame()
+        configurePongGame()
+        
+     //   ballView.backgroundColor = UIColor.green
     }
 
     /// Эта функция вызывается, когда экран PongViewController повяился на экране телефона
@@ -168,7 +177,9 @@ class PongViewController: UIViewController {
     ///
     private func configurePongGame() {
         // NOTE: Настраиваем лэйбл со счетом игрока
+        enemyScoreLabel.text = "0"
         updateUserScoreLabel()
+      
 
         // NOTE: Включаем обработку жеста движения пальцем по экрану
         self.enabledPanGestureHandling()

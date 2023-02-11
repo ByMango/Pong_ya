@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJI-jb-urq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="64"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWf-Ua-Wfx">
                                 <rect key="frame" x="0.0" y="368" width="414" height="368"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="64"/>
@@ -43,14 +50,14 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFA-jq-m1C">
                                 <rect key="frame" x="190" y="351" width="34" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.22783801020408168" blue="0.59545145965294322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QFA-jq-m1C" secondAttribute="height" multiplier="1:1" id="Tws-kF-MPN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXA-l5-Wr3">
                                 <rect key="frame" x="155.33333333333334" y="44" width="103.33333333333334" height="24"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Eed-3f-rZA"/>
                                 </constraints>
@@ -66,6 +73,7 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sWf-Ua-Wfx" secondAttribute="bottom" id="0O8-Qd-VXR"/>
                             <constraint firstItem="QFA-jq-m1C" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="2wi-1Q-GF9"/>
+                            <constraint firstItem="PJI-jb-urq" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.5" id="57U-7o-wwh"/>
                             <constraint firstItem="unS-db-gNZ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5u8-UL-93M"/>
                             <constraint firstItem="unS-db-gNZ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.25" id="Azj-K5-acL"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="CKc-LF-Y8e"/>
@@ -73,19 +81,23 @@
                             <constraint firstItem="MXA-l5-Wr3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="MHG-3c-Q1W"/>
                             <constraint firstItem="MXA-l5-Wr3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="N8c-to-Rmn"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PXZ-um-Ppr"/>
+                            <constraint firstItem="PJI-jb-urq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UQZ-e4-JSV"/>
                             <constraint firstAttribute="trailing" secondItem="Zf6-XP-fUO" secondAttribute="trailing" id="bxp-Dz-BZ1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PJI-jb-urq" secondAttribute="trailing" id="czo-bm-vKz"/>
                             <constraint firstItem="QFA-jq-m1C" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="edd-dB-Tfh"/>
                             <constraint firstItem="Zf6-XP-fUO" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="fNs-7O-y5q"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="unS-db-gNZ" secondAttribute="bottom" constant="44" id="hQ9-X2-x6q"/>
                             <constraint firstItem="QFA-jq-m1C" firstAttribute="width" secondItem="unS-db-gNZ" secondAttribute="width" multiplier="0.33" id="opd-30-qou"/>
                             <constraint firstItem="Zf6-XP-fUO" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="q1V-dR-iJ6"/>
+                            <constraint firstItem="PJI-jb-urq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wzZ-GA-ccg"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.5" id="xhK-3Z-VqJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ballView" destination="QFA-jq-m1C" id="q7c-aI-D9E"/>
                         <outlet property="enemyPaddleView" destination="MXA-l5-Wr3" id="odV-q7-r6j"/>
-                        <outlet property="lineView" destination="Zf6-XP-fUO" id="kGT-ZU-0eH"/>
+                        <outlet property="enemyScoreLabel" destination="PJI-jb-urq" id="71r-hR-8Ot"/>
+                        <outlet property="lineView" destination="PJI-jb-urq" id="dDx-Hu-HgQ"/>
                         <outlet property="userPaddleView" destination="unS-db-gNZ" id="IFy-ER-tRo"/>
                         <outlet property="userScoreLabel" destination="sWf-Ua-Wfx" id="tMU-4S-2qN"/>
                     </connections>
@@ -95,4 +107,9 @@
             <point key="canvasLocation" x="66.666666666666671" y="76.339285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
